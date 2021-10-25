@@ -11,6 +11,7 @@ const TaskForm = (props) => {
     const enteredValue = taskInputRef.current.value;
 
     if (enteredValue.trim().length > 0) {
+      // This is where the 'enteredValue' (the 'taskText' param gets passed to the 'enterTaskHandler')
       props.onEnterTask(enteredValue);
     }
   };

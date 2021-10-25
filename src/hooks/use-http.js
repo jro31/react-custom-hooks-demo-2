@@ -22,7 +22,7 @@ const useHttp = () => {
 
       const data = await response.json();
 
-      applyData(data);
+      applyData(data); // This is the moment that the 'createTask' function (from 'NewTask.js') gets executed, passing-in the 'data' as the second parameter
     } catch (err) {
       setError(err.message || 'Something went wrong!');
     }
